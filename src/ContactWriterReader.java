@@ -35,7 +35,8 @@ public class ContactWriterReader {
 		// the disk and exit the program
 		System.out.println("Enter the file name: ");
 		inputString = keyboard.nextLine();
-
+		
+		//if statement to check existence
 		if (contactFile.exists()) {
 			inputFile = new BufferedReader(new FileReader(contactFile));
 			while (inputFile.ready()) {
@@ -48,9 +49,10 @@ public class ContactWriterReader {
 				inputString = inputFile.readLine();
 
 				numContacts++;
-
+				
+				inputFile.close();//closing file
 			}
-			inputFile.close();
+			
 
 			for (int ctr = 0; ctr < numContacts; ctr++) {
 				System.out.println("Last name: " + StoreArray[ctr].getLastName());
