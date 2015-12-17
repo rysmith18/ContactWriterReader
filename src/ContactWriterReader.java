@@ -47,6 +47,26 @@ public class ContactWriterReader {
 
 				StoreArray[numContacts].setFirstName(inputString);
 				inputString = inputFile.readLine();
+				
+				StoreArray[numContacts].setMiddleName(inputString);
+				
+				inputString = inputFile.readLine();
+				StoreArray[numContacts].setPhone(inputString);
+				
+				inputString = inputFile.readLine();
+				StoreArray[numContacts].setPrefix(inputString);
+				
+				inputString = inputFile.readLine();
+				StoreArray[numContacts].setStreet(inputString);
+				
+				inputString = inputFile.readLine();
+				StoreArray[numContacts].setCity(inputString);
+				
+				inputString = inputFile.readLine();
+				StoreArray[numContacts].setState(inputString);
+				
+				inputString = inputFile.readLine();
+				StoreArray[numContacts].setOccupation(inputString);
 
 				numContacts++;
 				
